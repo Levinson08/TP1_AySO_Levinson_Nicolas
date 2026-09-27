@@ -1,0 +1,63 @@
+exit
+pwd
+ls -l
+ssh-keygen -t ed25519
+ls -l
+ls -la
+cd .ssh
+pwd
+ls -l
+cat
+cat id_ed25519.pub
+ssh-keygen -t ed25519
+y
+ssh-keygen -t ed25519
+cat $HOME/.ssh/*.pub
+mkdir repogit
+cd repogit
+git clone git@github.com:Levinson08/TP1_AySO_Levinson_Nicolas.git
+cd TP1_AySO_Levinson_Nicolas/
+pwd
+ls -1
+ls -l
+cat /etc/os-release
+man grep
+grep HOME_URL /etc/os-release
+grep home_url /etc/os-release
+grep -i Home_url /etc/os-release
+grep -i Home_url /etc/os-release > datos_url.txt
+whoami
+echo “Usuario=$(whoami)” > datos_usuario.txt
+git add .
+git config --global user.email "nicolaslevinson08@gmail.com"
+git config --global user.name "Levinson08"
+git commit -m "ADD: agregado 1er
+ejercicio sobre datos_usuario.txt"
+git status
+git push
+grep "model name" /proc/cpuinfo | head -n1 >>
+datos_usuario.txt
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt
+git add datos_usuario.txt
+git commit -m "feat: Añadiendo información de CPU"
+git push
+cat <<EOF >> README.md
+Alumno: Nicolas Levinson
+División: 113
+Turno: Mañana
+EOF
+
+cat <<EOF > README.md
+Alumno: Nicolas Levinson
+División: 113
+Turno: Noche
+EOF
+
+git add README.md datos_usuario.txt
+git commit -m "ADD: Añadiendo Readme y datos de usuario"
+git push
+cd ~
+mkdir -p materia{1,2}/uni{1,2,3}
+tree
+ls -R materia1 materia2
+history -a
